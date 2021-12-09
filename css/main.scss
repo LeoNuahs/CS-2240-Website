@@ -39,6 +39,16 @@ section {
         }
     }
 
+    .left-nav {
+        display: none;
+        cursor: pointer;
+    }
+
+    .right-nav {
+        display: none;
+        cursor: pointer;
+    }
+
     nav {
         display: none;
         position: fixed;
@@ -145,6 +155,8 @@ section.features-section {
 ul.features-list {
     margin: 0;
     padding-left: .1em;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
 
     li {
         font-size: 1.1em;
@@ -163,10 +175,6 @@ ul.features-list {
             margin-right: .5em;
         }
     }
-}
-
-.features-section img {
-    display: none;
 }
 
 .testimonials-section {
@@ -193,7 +201,7 @@ ul.features-list {
     }
 }
 
-@media only screen and (min-width: 854px) {
+@media only screen and (min-width: 838px) {
     
     .mobile-menu, .mobile-menu-exit {
         display: none;
@@ -201,7 +209,23 @@ ul.features-list {
 
     .navbar .container {
         display: grid;
-        grid-template-columns: 180px auto;
+        grid-template-columns: 180px 30px auto 30px;
+
+        .logo {
+            width: 80px;
+        }
+    }
+
+    .navbar .left-nav {
+        display: block;
+    }
+
+    .navbar .right-nav {
+        display: block;
+    }
+
+    .navbar nav {
+        display: flex;
     }
 
     .navbar nav {
@@ -210,8 +234,9 @@ ul.features-list {
         background: none;
         position: unset;
         height: auto;
-        width: 100%;
+        width: 99%;
         padding: 0;
+        overflow: hidden;
 
         ul {
             display: flex;
@@ -220,11 +245,76 @@ ul.features-list {
                 color: black;
                 font-size: 1em;
                 padding: .1em .5em;
+                white-space: nowrap;
             }
         }
 
         li.current a {
             font-weight: bold;
+        }
+    }
+}
+
+@media only screen and (min-width: 1080px) {
+    .container {
+        width: 1080px;
+        margin: 0 auto;
+    }
+
+    section {
+        padding: 10em 4em;
+    }
+
+    .hero .container {
+        display: flex;
+        justify-content: space-between;
+        text-align: left;
+
+        .left-col {
+            margin: 3em 3em 0 5em;
+
+            h1 {
+                font-size: 3em;
+                width: 90%;
+            }
+        }
+    }
+
+    .hero-img {
+        width: 100%;
+        margin-right: 8em;
+    }
+
+    .hero-cta {
+        display: flex;
+    }
+    .primary-cta {
+        margin-right: 1em;
+    }
+
+    .ul-features-list {
+        display: block;
+        margin-left: 5em;
+
+        li {
+            font-size: 1.4em;
+
+            &:before {
+                width: 30px;
+                height: 30px;
+            }
+        }
+    }
+
+    .features-section {
+        position: relative;
+    }
+
+    .testimonials-section ul {
+        display: flex;
+
+        li {
+            margin: 0 1em;
         }
     }
 }
