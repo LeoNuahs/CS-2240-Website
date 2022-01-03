@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+@import "./variables";
+@import "./navbar";
+@import "./opening";
+
+section.hero {
+    h2 {
+        text-align: center;
+        background: $headerBackground;
+        font-size: 2em;
+        font-weight: 400;
+        color: white;
+        padding: .5em;
+        border-radius: 1em;
+    }
+}
+
+body {
+    background: $bodyBackground;
+    margin: 0;
+    font-family: 'Poppins';
+}
+
+section {
+    padding: 1em 2em;
+}
+
+@media only screen and (min-width: 808px) {
+    section.opening {
+        .container {
+            display: grid;
+            grid-template-columns: repeat(8, 1fr);
+            gap: 20px;
+            grid-auto-rows: 125px;
+            grid-template-areas:
+            "a a a a a a a a"
+            "b b b b c c c c"
+            "b b b b c c c c"
+            "b b b b c c c c";
+    
+            .header {
+                grid-area: a;
+            }
+    
+            .table-of-contents {
+                grid-area: c;
+                margin: auto;
+            }
+            
+            .image {
+                grid-area: b;
+                align-self: center;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1080px) {
+    .container {
+        width: 1080px;
+        margin: 0 auto;
+    }
+}
