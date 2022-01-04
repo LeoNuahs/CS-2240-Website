@@ -11,8 +11,8 @@ section.opening {
         border-style: solid;
         border-width: .1em;
         text-align: justify;
-        width: 360px;
-        height: 305px;
+        max-width: 360px;
+        display: flexbox;
         margin: 4em auto;
 
         .toc-title {

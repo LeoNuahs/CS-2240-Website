@@ -3,18 +3,7 @@
 @import "./variables";
 @import "./navbar";
 @import "./opening";
-
-section.hero {
-    h2 {
-        text-align: center;
-        background: $headerBackground;
-        font-size: 2em;
-        font-weight: 400;
-        color: white;
-        padding: .5em;
-        border-radius: 1em;
-    }
-}
+@import "./hero";
 
 body {
     background: $bodyBackground;
@@ -54,11 +43,27 @@ section {
             }
         }
     }
+
+    section.hero {
+        .items {
+            p {
+                text-align: justify;
+            }
+    
+            .image {
+
+                img {
+                    display: inline;
+                    width: 50%;
+                }
+            }
+        }
+    }
 }
 
 @media only screen and (min-width: 1080px) {
     .container {
-        width: 1080px;
+        max-width: 1080px;
         margin: 0 auto;
     }
 }

@@ -1,0 +1,25 @@
+section.hero {
+    .header {
+        h2 {
+            text-align: center;
+            background: $headerBackground;
+            font-size: 2em;
+            font-weight: 400;
+            color: white;
+            padding: .5em;
+            border-radius: 1em;
+        }
+    }
+
+    .items {
+        p {
+            font-size: 1.3em;
+            text-align: left;
+            line-height: 150%;
+        }
+
+        img {
+            display: none;
+        }
+    }
+}
