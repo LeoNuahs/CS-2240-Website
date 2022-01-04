@@ -2,7 +2,6 @@ section.hero {
     text-align: center;
 
     .left-col {
-
         .subhead {
             text-transform: uppercase;
             font-weight: bold;
@@ -26,6 +25,8 @@ section.hero {
             font-weight: bold;
             display: inline-block;
             word-wrap: break-word;
+
+            
         }
     
         .watch-video-cta {
@@ -45,5 +46,26 @@ section.hero {
     .hero-img {
         width: 70%;
         margin-top: 3em;
+    }
+
+    .pa-list {
+        display: none;
+        border-style: solid;
+        border-radius: 4em;
+        padding: 2em;
+    
+        .item {
+            padding: 1em;
+            
+            a {
+                color: $primaryColor;
+                font-size: 1.5em;
+                text-decoration: none;
+                justify-self: left;
+    
+                &:hover { text-decoration: underline; }
+                &:visited { color: $primaryColor; }
+            }
+        }
     }
 }

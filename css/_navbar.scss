@@ -13,16 +13,11 @@
         }
     }
 
-    .left-nav {
+    .left-nav, .right-nav {
         display: none;
         cursor: pointer;
     }
-
-    .right-nav {
-        display: none;
-        cursor: pointer;
-    }
-
+    
     nav {
         display: none;
         position: fixed;

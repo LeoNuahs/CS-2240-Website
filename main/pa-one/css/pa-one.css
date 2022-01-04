@@ -1,6 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 .navbar {
   background: white;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
   padding: 1em;
 }
 
@@ -55,8 +58,8 @@ section.opening .table-of-contents {
   border-style: solid;
   border-width: .1em;
   text-align: justify;
-  width: 360px;
-  height: 305px;
+  max-width: 360px;
+  display: flexbox;
   margin: 4em auto;
 }
 
@@ -89,7 +92,7 @@ section.opening .table-of-contents ul li a:visited {
   color: #007AF3;
 }
 
-section.hero h2 {
+section.hero .header h2 {
   text-align: center;
   background: #006BD6;
   font-size: 2em;
@@ -97,6 +100,16 @@ section.hero h2 {
   color: white;
   padding: .5em;
   border-radius: 1em;
+}
+
+section.hero .items p {
+  font-size: 1.3em;
+  text-align: left;
+  line-height: 150%;
+}
+
+section.hero .items img {
+  display: none;
 }
 
 body {
@@ -143,11 +156,18 @@ section {
         -ms-grid-row-align: center;
         align-self: center;
   }
+  section.hero .items p {
+    text-align: justify;
+  }
+  section.hero .items .image img {
+    display: inline;
+    width: 50%;
+  }
 }
 
 @media only screen and (min-width: 1080px) {
   .container {
-    width: 1080px;
+    max-width: 1080px;
     margin: 0 auto;
   }
 }
