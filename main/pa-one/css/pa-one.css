@@ -159,9 +159,12 @@ section {
   section.hero .items p {
     text-align: justify;
   }
-  section.hero .items .image img {
-    display: inline;
-    width: 50%;
+  section.hero .items img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 4em auto;
+    width: 65%;
   }
 }
 

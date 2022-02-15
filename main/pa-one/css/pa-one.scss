@@ -49,13 +49,11 @@ section {
             p {
                 text-align: justify;
             }
-    
-            .image {
 
-                img {
-                    display: inline;
-                    width: 50%;
-                }
+            img {
+                display: flex;
+                margin: 4em auto;
+                width: 65%;
             }
         }
     }
