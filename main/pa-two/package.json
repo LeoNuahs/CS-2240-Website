@@ -1,0 +1,22 @@
+{
+  "name": "cs-2240-website",
+  "version": "1.0.0",
+  "description": "This repository is for the CS 2240 Website of a regular CS student as they learn more and more of website development.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ScriBrannauts/CS-2240-Website.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ScriBrannauts/CS-2240-Website/issues"
+  },
+  "homepage": "https://github.com/ScriBrannauts/CS-2240-Website#readme",
+  "dependencies": {
+    "bootstrap": "^5.1.3"
+  }
+}
