@@ -9,12 +9,3 @@ mobileBtn.addEventListener("click", () => {
 mobileBtnExit.addEventListener("click", () => {
     nav.classList.remove("menu-btn");
 });
-
-const heroContainer = document.getElementById("opening");
-const heroList = document.getElementById("pa-list");
-const getStarted = document.getElementById("primary-cta");
-
-getStarted.addEventListener("click", () => {
-    heroContainer.style.display = "none";
-    heroList.style.display = "block";
-});

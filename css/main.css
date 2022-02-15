@@ -74,51 +74,8 @@ section.hero {
   text-align: center;
 }
 
-section.hero .left-col .subhead {
-  text-transform: uppercase;
-  font-weight: bold;
-  color: gray;
-  letter-spacing: .3em;
-}
-
-section.hero .left-col h1 {
-  font-size: 2.5em;
-  line-height: 1.3em;
-  margin-top: .2em;
-}
-
-section.hero .left-col .primary-cta {
-  background-color: #007AF3;
-  color: white;
-  text-decoration: none;
-  padding: .6em 1.3em;
-  font-size: 1.4em;
-  border-radius: 5em;
-  font-weight: bold;
-  display: inline-block;
-  word-wrap: break-word;
-}
-
-section.hero .left-col .watch-video-cta {
-  display: block;
-  margin-top: 1em;
-}
-
-section.hero .left-col .watch-video-cta img {
-  margin-right: .5em;
-}
-
-section.hero .left-col a {
-  color: #444444;
-}
-
-section.hero .hero-img {
-  width: 70%;
-  margin-top: 3em;
-}
-
 section.hero .pa-list {
-  display: none;
+  display: block;
   border-style: solid;
   border-radius: 4em;
   padding: 2em;
