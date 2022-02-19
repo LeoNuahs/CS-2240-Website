@@ -1,10 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
 @import "./variables";
-@import "./navbar";
-@import "./hero";
-@import "./features";
-@import "./testimonials";
 
 body {
     background: $bodyBackground;
@@ -21,6 +17,12 @@ ul {
 section {
     padding: 5em 2em;
 }
+
+@import "./navbar";
+@import "./hero";
+@import "./features";
+@import "./testimonials";
+
 
 @media only screen and (max-width: 829px) {
     .hero {
