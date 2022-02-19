@@ -1,0 +1,29 @@
+section.hero {
+    text-align: center;
+    padding-top: 2em;
+
+    h1 {
+        font-size: 4.5em;
+    }
+
+    .pa-list {
+        display: block;
+        border-style: solid;
+        border-radius: 4em;
+        padding: 2em;
+    
+        .item {
+            padding: 1em;
+            
+            a {
+                color: $primaryColor;
+                font-size: 1.5em;
+                text-decoration: none;
+                justify-self: left;
+    
+                &:hover { text-decoration: underline; }
+                &:visited { color: $primaryColor; }
+            }
+        }
+    }
+}
